@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Umbrella</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header>
-    <a href="#"><img
-            src="https://seeklogo.com/images/U/Umbrella_Corporation__ResidentEvil_-logo-54E131AAF2-seeklogo.com.png"
-            alt="logo" width="50">
-        <span>Umbrella</span>
-    </a>
+<header id="header">
+    <div class="container">
+        <a id="logo" href="#"><img
+                src="img/logo.png"
+                alt="logo" width="50">
+            <span>Umbrella</span>
+        </a>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="#" target="_blank">Главная</a></li>
+                <li><a href="#" target="_blank">Меню</a></li>
+                <li><a href="#" target="_blank">Каталог</a></li>
+                <li><a href="#" target="_blank">Отзывы</a></li>
+            </ul>
+        </nav>
 
-    <ul>
-        <li><a href="#" target="_blank">Главная</a></li>
-        <li><a href="#" target="_blank">Меню</a></li>
-        <li><a href="#" target="_blank">Каталог</a></li>
-        <li><a href="#" target="_blank">Отзывы</a></li>
-    </ul>
+        <button class="btn btn-auth">Войти</button>
 
+    </div>
 </header>
 <main>
-
-    <div>
+    <div class="container">
         <h1>Umbrella - подберём вам качественный зонт!</h1>
-        <img src="https://pngimg.com/uploads/umbrella/small/umbrella_PNG69208.png"
+        <img src="img/banner.png"
              alt="umbrella"
              width="300">
     </div>
-    <hr>
-    <div>
+    <div class="container">
         <h2>Каталог</h2>
         <div>
             <div>
                 <h3>Зонт "синий"</h3>
-                <img src="https://pngimg.com/uploads/umbrella/small/umbrella_PNG69155.png"
+                <img src="img/blue-umb.png"
                      alt="Синий зонт" width="200">
                 <p> Зонтик является очень полезной и незаменимой вещью как в хмурую и дождливую погоду, так и в
                     солнечный летний день.
@@ -46,7 +51,7 @@
             </div>
             <div>
                 <h3>Пляжный зонт</h3>
-                <img src="https://pngimg.com/uploads/umbrella/small/umbrella_PNG69219.png"
+                <img src="img/beach_umb.png"
                      alt="пляжный зонт" width="200">
                 <p>С приходом лета пора задуматься над приобретением аксессуаров, которые будут защищать от солнца.
                     <br>Это позволит не допустить негативных последствий, которые ожидают от его лучей.
@@ -55,7 +60,7 @@
             </div>
             <div>
                 <h3>Зонт "чёрный"</h3>
-                <img src="https://pngimg.com/uploads/umbrella/small/umbrella_PNG489.png"
+                <img src="img/black_umb.png"
                      alt="чёрный зонт" width="200">
                 <p>Черный зонт полезен как в солнечные дни, так и в дождь.
                     <br>Вы можете заблокировать 90% солнечных лучей от попадания на кожу, используя черный зонт
@@ -65,21 +70,23 @@
             </div>
         </div>
     </div>
-
 </main>
-<footer>
-    <hr>
-    <ul>
-        <li><a href="#" target="_blank">Условия</a></li>
-        <li><a href="#" target="_blank">Тех.поддержка</a></li>
-        <li><a href="#" target="_blank">Телефон</a></li>
-    </ul>
-    <ul>
-        <li><a href="#" target="_blank">Описание</a></li>
-        <li><a href="#" target="_blank">Помощь</a></li>
-        <li><a href="#" target="_blank">Обмен,гарантия,возврат</a></li>
-    </ul>
 
+<hr>
+
+<footer>
+    <div class="container">
+        <ul>
+            <li><a href="#" target="_blank">Условия</a></li>
+            <li><a href="#" target="_blank">Тех.поддержка</a></li>
+            <li><a href="#" target="_blank">Телефон</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" target="_blank">Описание</a></li>
+            <li><a href="#" target="_blank">Помощь</a></li>
+            <li><a href="#" target="_blank">Обмен,гарантия,возврат</a></li>
+        </ul>
+    </div>
 </footer>
 </body>
 </html>
