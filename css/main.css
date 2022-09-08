@@ -10,12 +10,13 @@ a {
 }
 
 body {
-    font-family: "M PLUS";
+    font-family: "Cormorant Infant";
     font-size: 16px;
 }
 
 main {
     padding-top: 60px;
+    background-color: #f5f5f5;
 }
 
 .menu-list {
@@ -95,3 +96,6 @@ header .menu-list a:hover {
     color: #675f5f;
 }
 
+footer {
+    background-color: #f5f5f5;
+}
