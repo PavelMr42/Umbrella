@@ -71,6 +71,10 @@ header .menu-list a:hover {
     display: flex;
 }
 
+#logo img {
+    width: 50px;
+}
+
 #logo span {
     font-size: 37px;
     font-weight: bold;
