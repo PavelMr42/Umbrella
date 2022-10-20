@@ -19,6 +19,11 @@ h1 {
     z-index: 1;
 }
 
+h2 {
+    font-size: 28px;
+}
+
+
 main {
     padding-top: 60px;
 }
@@ -174,6 +179,7 @@ footer .footer-menu a:hover {
 
 .head-block h1 {
     padding-top: 130px;
+    color: #4f4646;
 }
 
 .head-block p {
@@ -185,4 +191,76 @@ footer .footer-menu a:hover {
     width: 350px;
     position: absolute;
     margin-left: -347px;
+}
+
+.catalog-page h2 {
+    color: #4f4646;
+}
+
+.filter-block {
+    float: left;
+    width: 265px;
+    height: 350px;
+    border: 1px solid #a99191;
+    border-radius: 6px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.catalog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-block {
+
+}
+
+.cards-item {
+    border: 1px solid #a99191;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 20px;
+    height: 208px;
+}
+
+.cards-item img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    border: 1px solid #a99191;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.cards-item .card-text-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-item .card-text-items h3{
+    font-size: 20px;
+    color: #4f4646;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cards-item .card-text-items .btn {
+    opacity: 0.8;
+    font-weight: normal;
+    color: #000000;
+    background-color: #e1c6c6;
+    border: none;
+    float: right;
+}
+
+.cards-item .card-text-items p {
+    color: #4f4646;
+    font-size: 16px;
+    max-height: 114px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
