@@ -255,6 +255,7 @@ footer .footer-menu a:hover {
     background-color: #e1c6c6;
     border: none;
     float: right;
+    margin-top: 10px;
 }
 
 .cards-item .card-text-items p {
