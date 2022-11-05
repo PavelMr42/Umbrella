@@ -484,6 +484,7 @@ footer .footer-menu a:hover {
         padding-left: 15px;
         padding-right: 15px;
     }
+    /*Карточки*/
     .cards-item img {
         height: 180px;
         width: 180px;
@@ -493,6 +494,7 @@ footer .footer-menu a:hover {
     }
     .cards-item {
         height: 390px;
+
     }
     .cards-item .card-text-items h3 {
         margin-left: 50px;
@@ -507,6 +509,7 @@ footer .footer-menu a:hover {
         display: inherit;
         text-align: center;
     }
+    /*футер*/
     footer .footer-menu a {
         font-size: 13px;
     }
@@ -519,9 +522,6 @@ footer .footer-menu a:hover {
         display: block;
     }
     .last-footer-block ul {
-        list-style: none;
-        display: flex;
-        float: right;
         font-size: 13px;
         text-align: center;
     }
