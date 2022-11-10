@@ -36,8 +36,8 @@ main {
 }
 
 .container {
-    width: 1200px;
-    min-width: 1200px;
+    width: 1100px;
+    min-width: 1100px;
     padding-left: 5px;
     padding-right: 5px;
     margin-left: auto;
@@ -55,7 +55,7 @@ main {
     z-index: 1;
 }
 
-header .container {
+#header .container {
     align-items: center;
     display: flex;
 }
@@ -66,7 +66,7 @@ header .container {
     width: 40%;
 }
 
-header .menu-list a {
+#header .menu-list a {
     color: #544e4e;
     font-weight: bold;
     font-size: 16px;
@@ -74,6 +74,41 @@ header .menu-list a {
 
 #header .menu-list a:hover {
     color: #a48c8c;
+}
+
+.head-block {
+    background-image: url("../img/Banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: top 2% right;
+    height: 367px;
+    background-color: #fff2f2;
+    margin-bottom: 40px;
+    box-shadow: 0 1px 8px 0 #a9a7a7;
+}
+
+.head-block h1 {
+    padding-top: 130px;
+    color: #4f4646;
+}
+
+.head-block h1 .main-text:first-child {
+    font-size: 20px;
+}
+
+.head-block h1 .main-text:last-child {
+    font-size: 20px;
+}
+
+.head-block p {
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+.head-block img {
+    width: 350px;
+    position: absolute;
+    margin-left: -347px;
 }
 
 .logo {
@@ -164,33 +199,6 @@ footer .footer-menu a:hover {
 
 .last-footer-block a:hover {
     color: #fff;
-}
-
-.head-block {
-    background-image: url("../img/Banner.jpg");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: top 2% right;
-    height: 367px;
-    background-color: #fff2f2;
-    margin-bottom: 40px;
-    box-shadow: 0 1px 8px 0 #a9a7a7;
-}
-
-.head-block h1 {
-    padding-top: 130px;
-    color: #4f4646;
-}
-
-.head-block p {
-    font-size: 18px;
-    margin-top: 14px;
-}
-
-.head-block img {
-    width: 350px;
-    position: absolute;
-    margin-left: -347px;
 }
 
 .catalog-page h2 {
@@ -373,6 +381,171 @@ footer .footer-menu a:hover {
     background: #483e3e;
     color: #e5e1e1;
 }
+
+@media screen and (max-width: 1440px) {
+    .head-block img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 900px;
+        max-width: 900px;
+        min-width: auto;
+    }
+
+    .head-block {
+        background-position: top 40% right;
+        background-size: 60%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .logo img {
+        width: 43px;
+    }
+    .logo span {
+        font-size: 28px;
+    }
+    .container {
+        width: 750px;
+        max-width: 750px;
+    }
+    #header nav {
+        width: 50%;
+    }
+    .head-block {
+        background-position: top 44% right;
+        background-size: 63%;
+        height: 290px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .head-block p {
+        font-size: 17px;
+        margin-top: 14px;
+    }
+    .filter-block {
+        width: 211px;
+    }
+    .cards-item img {
+        height: 170px;
+        width: 170px;
+        margin-top: 40px;
+    }
+    .cards-item .card-text-items h3 {
+        position: absolute;
+        max-width: 470px;
+        margin-left: -193px;
+    }
+    .cards-item .card-text-items p {
+        max-height: 113px;
+        margin-top: 41px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        max-width: 100%;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #header nav {
+        display: none;
+    }
+    .btn-auth {
+        display: none;
+    }
+    .head-block {
+        background-image: none;
+        height: auto;
+        padding-bottom: 30px;;
+    }
+    .head-block h1 {
+        padding-top: 30px;
+        text-align: center;
+    }
+    .head-block p {
+        text-align: center;
+    }
+    .filter-block {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px 10px;
+        display: block;
+        width: auto;
+        height: auto
+    }
+    .filter-block .checkbox-group {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .filter-block .checkbox-group .checkbox {
+        width: 35%;
+    }
+    .filter-block .filter-item h3 {
+        margin-left: 14%;
+    }
+    .filter-block .radio-group {
+        margin-left: 14%;
+    }
+    .filter-block .filter-buttons {
+        text-align: left;
+        margin-left: 14%;
+        margin-bottom: 20px;
+    }
+    .cards-item {
+        height: 375px
+    }
+    .cards-item img {
+        float: none;
+    }
+    .cards-item .card-text-items h3 {
+        max-width: 80%;
+        margin-left: 0;
+        margin-top: -210px;
+    }
+    .cards-item .card-text-items p {
+        margin-top: 10px;
+    }
+    .cards-item .card-text-items .btn {
+        float: none;
+    }
+    .cards-item .card-text-items .card-buttons {
+        text-align: center;
+    }
+    .last-footer-block ul {
+        margin-top: 10px;
+        flex-direction: column;
+        float: none;
+        text-align: center;
+        font-size: 16px;
+    }
+    footer .footer-menu a {
+        font-size: 13px;
+    }
+    .logo span {
+        font-size: 27px;
+    }
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    @media screen and (max-width: 575px) {
+        .filter-block .checkbox-group .checkbox {
+            width: 49%;
+        }
+}
+
 
 
 
