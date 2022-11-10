@@ -454,8 +454,8 @@ footer .footer-menu a:hover {
     .container {
         max-width: 100%;
         width: auto;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     #header nav {
         display: none;
@@ -466,8 +466,7 @@ footer .footer-menu a:hover {
     .head-block {
         background-image: none;
         height: auto;
-        padding-bottom: 30px;
-        margin-bottom: 25px;
+        padding-bottom: 30px;;
     }
     .head-block h1 {
         padding-top: 30px;
@@ -477,61 +476,74 @@ footer .footer-menu a:hover {
         text-align: center;
     }
     .filter-block {
-        width: auto;
-        display: block;
         float: none;
-        margin: 0;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px 10px;
+        display: block;
+        width: auto;
+        height: auto
     }
-    /*Карточки*/
-    .cards-item img {
-        height: 180px;
-        width: 180px;
-        margin-top: -2px;
-        position: absolute;
-        margin-left: 36px;
+    .filter-block .checkbox-group {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .filter-block .checkbox-group .checkbox {
+        width: 35%;
+    }
+    .filter-block .filter-item h3 {
+        margin-left: 14%;
+    }
+    .filter-block .radio-group {
+        margin-left: 14%;
+    }
+    .filter-block .filter-buttons {
+        text-align: left;
+        margin-left: 14%;
+        margin-bottom: 20px;
     }
     .cards-item {
-        height: 390px;
-
+        height: 375px
+    }
+    .cards-item img {
+        float: none;
     }
     .cards-item .card-text-items h3 {
-        margin-left: 50px;
-        margin-top: 187px;
+        max-width: 80%;
+        margin-left: 0;
+        margin-top: -210px;
     }
     .cards-item .card-text-items p {
-        margin-top: 221px;
-        text-align: center;
+        margin-top: 10px;
     }
     .cards-item .card-text-items .btn {
         float: none;
-        display: inherit;
+    }
+    .cards-item .card-text-items .card-buttons {
         text-align: center;
     }
-    /*футер*/
+    .last-footer-block ul {
+        margin-top: 10px;
+        flex-direction: column;
+        float: none;
+        text-align: center;
+        font-size: 16px;
+    }
     footer .footer-menu a {
         font-size: 13px;
     }
-    .last-footer-block span {
-        font-size: 15px;
-    }
-    .last-footer-block {
-        padding-bottom: 50px;
-        text-align: center;
-        display: block;
-    }
-    .last-footer-block ul {
-        font-size: 13px;
-        text-align: center;
+    .logo span {
+        font-size: 27px;
     }
     .logo img {
         width: 40px;
         height: 40px;
     }
-    .logo span {
-        font-size: 27px;
-    }
+    @media screen and (max-width: 575px) {
+        .filter-block .checkbox-group .checkbox {
+            width: 49%;
+        }
 }
 
 
