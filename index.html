@@ -39,7 +39,49 @@
     <div class="container">
         <h2>Каталог зонтов</h2>
         <aside class="filter-block">
-            <span>Фильтры:</span>
+            <span id="filter-text">Фильтры</span>
+            <div class="filter-item">
+                <h3>Материал изделия</h3>
+                <div class="filter-group">
+                    <div class="checkbox">
+                        <input type="checkbox" id="filter-1">
+                        <label for="filter-1">Полиэстр</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="filter-2">
+                        <label for="filter-2">Нейлон</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="filter-3">
+                        <label for="filter-3">Эпонж</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="filter-4">
+                        <label for="filter-4">Сатин</label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-item">
+                <h3>Тип зонта</h3>
+                <div class="filter-group">
+                    <div class="radio-toggle">
+                        <div class="radio">
+                            <input type="radio" id="filter-radio-1" name="mechanism">
+                            <label for="filter-radio-1">Автомат</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="filter-radio-2" name="mechanism">
+                            <label for="filter-radio-2">Механика</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filter-buttons">
+                <button class="btn filter-button">показать 2 карточки</button>
+            </div>
+
         </aside>
         <div class="catalog-content">
             <div class="cards-block">

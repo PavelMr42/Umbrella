@@ -72,8 +72,8 @@ header .menu-list a {
     font-size: 16px;
 }
 
-header .menu-list a:hover {
-    color: #544e4e;
+#header .menu-list a:hover {
+    color: #a48c8c;
 }
 
 .logo {
@@ -110,8 +110,8 @@ header .menu-list a:hover {
 }
 
 .btn:hover {
-    border-color: #675f5f;
-    color: #675f5f;
+    border-color: #a48c8c;
+    color: #a48c8c;
 }
 
 footer {
@@ -200,21 +200,48 @@ footer .footer-menu a:hover {
 .filter-block {
     float: left;
     width: 265px;
-    height: 350px;
+    height: 300px;
     border: 1px solid #a99191;
     border-radius: 6px;
     margin-right: 20px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 10px 20px;
+    color: #4f4646;
+}
+
+.filter-block #filter-text {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.filter-block .filter-item {
+    margin-bottom: 10px;
+}
+
+.filter-block .filter-group {
+    margin-top: 5px;
+}
+
+.filter-block .filter-buttons {
+    text-align: center;
+}
+
+.filter-block .filter-button:hover {
+    color: #efefef;
+    background-color: #c09a9a;
+}
+
+.filter-block .filter-button {
+    opacity: 0.8;
+    color: #000000;
+    background-color: #e1c6c6;
+    border-radius: 4px;
+    margin-top: 10px;
 }
 
 .catalog-content {
     display: flex;
     flex-direction: column;
-}
-
-.cards-block {
-
 }
 
 .cards-item {
@@ -258,6 +285,11 @@ footer .footer-menu a:hover {
     margin-top: 10px;
 }
 
+.cards-item .card-text-items .btn:hover {
+    color: #efefef;
+    background-color: #c09a9a;
+}
+
 .cards-item .card-text-items p {
     color: #4f4646;
     font-size: 16px;
@@ -265,3 +297,101 @@ footer .footer-menu a:hover {
     overflow: hidden;
     margin-bottom: 10px;
 }
+
+.checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.checkbox label::before {
+    content: '\00A0';
+    color: #d5d0d0;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #4f4646;
+    border-radius: 4px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.checkbox input:checked+label::before {
+    content: '\2714';
+    border-color: #483e3e;
+    background-color: #483e3e;
+}
+
+.radio-toggle {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.radio-toggle .radio {
+    float: left;
+    display: inline-block;
+}
+
+.radio-toggle input[type=radio] {
+    display: none;
+}
+
+.radio-toggle label {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 34px;
+    border: 1px solid #a99191;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio-toggle .radio:first-child label {
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.radio-toggle .radio:last-child label {
+
+    border-radius: 0 8px 8px 0;
+}
+
+.radio-toggle input[type=radio]:checked + label {
+    background: #483e3e;
+    color: #e5e1e1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
