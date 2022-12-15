@@ -11,12 +11,12 @@ function NumberStrings() {
     alert(888)
 }
 
-function lines1(lineResult) {
+function Concantinations(lineResult) {
     lineResult += ' - hello brothers'
     alert(lineResult)
 }
 
-function lines2(lineResult) {
+function linesConcantinations(lineResult) {
     lineResult = lineResult + ' - hello brothers'
     alert(lineResult)
 }
