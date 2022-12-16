@@ -1,3 +1,10 @@
+
+.btn-switch{
+    color: crimson !important;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -373,6 +380,8 @@ footer .footer-menu a:hover {
     background: #483e3e;
     color: #e5e1e1;
 }
+
+
 
 
 
