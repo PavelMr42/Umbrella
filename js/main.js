@@ -27,7 +27,7 @@ function cycleFor() {
 }
 
 function ElementFor() {
-    let ElementsForEach = document.getElementsByClassName('all-btn');
+    let ElementsCycleFor = document.getElementsByClassName('all-btn');
     let array = [1, 4, 5, 8, 6];
     for (let i = 0; i < array.length; i++) {
         console.log(array[i]);
@@ -56,6 +56,6 @@ function cycleForStyle() {
     }
 }
 document.addEventListener('DOMContentLoaded', function () {
-    cycleForEach()
+    ElementFor()
 }, false);
 
