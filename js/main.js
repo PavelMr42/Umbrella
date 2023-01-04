@@ -29,8 +29,8 @@ function cycleFor() {
 function ElementFor() {
     let ElementsCycleFor = document.getElementsByClassName('all-btn');
     let array = [1, 4, 5, 8, 6];
-    for (let i = 0; i < array.length; i++) {
-        console.log(array[i]);
+    for (let index=0; index < array.length; index++) {
+        console.log(array[index]);
     }
 }
 
