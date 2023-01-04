@@ -26,9 +26,17 @@ function cycleFor() {
     }
 }
 
+function ElementFor() {
+    let ElementsForEach = document.getElementsByClassName('all-btn');
+    let array = [1, 4, 5, 8, 6];
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+}
+
 function cycleForEach() {
     let ElementsForEach = document.getElementsByClassName('all-btn');
-    let array = [1 , 4, 5, 8, 6]
+    let array = [1 , 4, 5, 8, 6];
     array.forEach((element) => {
         console.log(element)
     })
@@ -48,6 +56,6 @@ function cycleForStyle() {
     }
 }
 document.addEventListener('DOMContentLoaded', function () {
-    cycleForStyle()
+    cycleForEach()
 }, false);
 
